@@ -1,4 +1,4 @@
-- hosts: todos
+- hosts: all
   become: yes
   user: ubuntu
   gather_facts: no

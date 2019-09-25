@@ -5,5 +5,5 @@ security_group: giropops
 image: ami-064a0193585662d74
 keypair: descomplicando-ansible
 region: us-east-1
+profile: alessander
 count: 3
-profile: giropops
