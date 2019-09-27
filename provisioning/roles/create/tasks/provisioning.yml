@@ -84,8 +84,8 @@
 - name: Adicionando o ip privado da instancias no arquivo hosts
   local_action: lineinfile
     dest="../hosts"
-    regexp={{ item.privado_ip }}
-    insertafter="\[private_ips\]" line={{ item.privado_ip }}
+    regexp={{ item.private_ip }}
+    insertafter="\[private_ips\]" line={{ item.private_ip }}
   with_items: "{{ ec2.instances }}"
 
 - name: Esperando o SSH
